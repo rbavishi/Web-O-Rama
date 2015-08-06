@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Rohan Bavishi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="#" class="image avatar"><img src="images/ID.jpg" alt="" /></a>
+				<h1><strong>Rohan Bavishi</strong> <br />
+				<h4>
+				Third Year Undergraduate<br />
+				Computer Science<br />
+				Indian Institute of Technology, Kanpur<br /><br />
+				<h3>Research Interests<br />
+				<rinterest> Program Analysis and Verification <br />
+				     Automated Program Repair<br />
+				     Compiler Optimizations<br />
+				     Code Synthesis</rinterest><br /><br />
+				<h4>
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/rbavishi" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/rbavishi" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:rbavishi@iitk.ac.in" class="icon fa-envelope-o"> iitk <span class="label">Email</span></a></li>
+						<li><a href="mailto:rohan.bavishi95@gmail.com" class="icon fa-envelope-o"> <i class="fa fa-google"></i> <span class="label">Email</span></a></li><br /><br />
+					</ul>
+				</footer>
+				<personalmenu id="hello">
+				<a href="index.html"><i class="fa fa-home fa-lg"></i></a><br />
+				<a href="web/viewer.html">Resume</a><br />
+				<a href="courses.html">Courses</a><br />
+				<a href="projects.html">Projects</a><br />
+				<a href="softwares.html">Softwares</a><br />
+				</personalmenu>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<section id="one">
+					<header class="major">
+					  <h3> <i class="fa fa-th-list"></i> &nbsp&nbsp<a class="two" href="">Error Localization using Craig Interpolants </a></h3>
+					  <h5> <span style="padding-left:25em">March '15 - Ongoing</span></h5>
+					</header>
+					<br />
+					<p>
+					<ul>
+					  <li> Ongoing research project for localizing errors in programs using <a class="one" href="https://en.wikipedia.org/wiki/Craig_interpolation">Craig Interpolants</a> </li>
+					  <li> Source code and a link to the paper will be posted when the work is published </li>
+					</ul>
+					</p>
+				      </section>
+				      <section id="two">
+					<br /><br />
+					<header class="major">
+					  <h3><i class="fa fa-th-list"></i> &nbsp&nbsp<a class="two" href="https://drive.google.com/file/d/0B0--s-r8CTxgZTU3RzB3YnhMMVU/view">Median Algorithm for Disk-resident Data &nbsp&nbsp<i class="fa fa-caret-right"></i></a></h3>
+					  <h5> <span style="padding-left:25em">Sept '14 - Nov '14 </span></h5>
+					</header>
+					<br />
+					<p>
+					<ul>
+					  <li>Independently developed a 2-pass deterministic and a 2-pass randomized algorithm to find median of large data-sets (1 Terabyte) along with rigorous performance tests on a set of self-made benchmarks</li>
+					</ul>
+					<h4> Deterministic Algorithm - </h4>
+					<ul>
+					  <li>Final results on the deterministic algorithm were found to be very close to the actual paper by <a class="one" href="http://polylogblog.files.wordpress.com/2009/08/80munro-median.pdf">Munro-Paterson (1980)</a>
+					  <li>An ε-approximate median (ε = 1/ n) is calculated in the first pass, with the help of which, the exact median is computed in the second pass. The ε error-range ensures efficient computation of the median</li>
+					</ul>
+					<h4> Randomized Algorithm - </h4>
+					<ul>
+					  <li>Basic Random-Sampling techniques were implemented using <a class="one" href="https://en.wikipedia.org/wiki/Mersenne_Twister">Mersenne-Twister PRNG</a>. Theoretical success probability was calculated and compared with the practical performance over thousands of program-runs</li>
+					  <li>Success probability close to 0.6 achieved for medium-sized data-sets (10-50 GB)</li>
+					</ul>
+					</p>
+				      </section>
+				      <section id="three">
+					<br /><br />
+					<header class="major">
+					  <h3> <i class="fa fa-th-list"></i> &nbsp&nbsp<a class="two" href="https://github.com/rbavishi/P2P-Dropbox">P2P Dropbox &nbsp&nbsp<i class="fa fa-caret-right"></i></a></h3>
+					  <h5> <span style="padding-left:25em">Sept '13 - Nov '13 </span></h5>
+					</header>
+					<br />
+					<p>
+					<ul>
+					  <li>A Linux application for back-up and syncing of files between two or more peers</li>
+					  <li>Users have a shared folder across different machines, with local copies, in which any changes made are synced across all devices</li>
+					  <li>Linux <a class="one" href="http://man7.org/linux/man-pages/man7/inotify.7.html">inotify</a> API was used to track changes in the shared folder in order to initiate syncing</li>
+					  <li><a class="one" href="http://linux.about.com/library/cmd/blcmdl1_rsync.htm">rsync</a> was used to sync changes in files/folders so as to ensure efficient transfer of files. Only the changes between local and remote copies are transferred</li>
+					  <li>Multithreading with mutexes was used to parallelize syncing operations</li>
+					  <li>Retry mechanisms and network detection system were implemented to ensure syncing even in networks with inter-mittent connectivity</li>
+					  <li>Implemented a Command-Line-Interface to add/delete folders and show synchronization status</li>
+					</ul>
+					</p>
+				      </section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
